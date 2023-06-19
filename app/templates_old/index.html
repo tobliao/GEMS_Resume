@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Hi, {{ user.username.title() }}!</h1>
+    {{ summary.description }}
+
+    <!-- TODO: create contact card using dictionary to be created in /index route -->
+    <div id="contact-section">
+        <p><a href="mailto:{{ contact.email }}">Send me an email!</a></p>
+        <p><a href="skype:{{ contact.skype }}?chat">Skype me</a></p>
+        <p><a href="tel:{{ contact.phone }}">Call me</a></p>
+        <p><a href="sms:{{ contact.signal }}">Message me on Signal</a></p>
+    </div>
+{% endblock %}

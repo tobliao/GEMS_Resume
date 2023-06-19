@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for project in projects %}
+        <div class="container-fluid">
+            <div class="card-columns col-md-4" style="max-width: 400px;">
+                <div class="card">
+                    <div class="hoverable">
+                        <img src="https://placehold.it/300x400" alt="" class="card-image-top img-fluid">
+                    </div>
+                    <div class="card-body bg-primary">
+                        <h4 class="card-title">{{ project.name.title() }}</h4>
+                    </div>
+                    <div class="card-text">{{ project.description }}</div>
+                    <div class="bg-info">Environment <span class="">{{ project.environment }}</span></div>
+                    <a href="#" class="btn btn-primary stretched-link">See it!</a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

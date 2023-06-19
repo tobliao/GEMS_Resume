@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% for position in positions %}
+    <div>
+        <h3>{{ position.title.title() }}, {{ position.organization.title() }}<span class="pull-right">{{ position.dates.upper() }}</span></h3>
+        {% if position.description %}
+            <p>{{ position.description }}</p>
+            {% else %}
+        {% endif %}
+        <p>
+            {% for bullet in position.bullets %}
+            &#8226; {{ bullet }}<br />
+            {% endfor %}
+        </p>
+    </div>
+    {% endfor %}
+
+{% endblock %}
