@@ -19,11 +19,11 @@ def index():
     }
     # TODO: create variable and dictionary for contact info
     contact = {
-        "phone": "(886)907781115",
-        "email": "tobliao@cisco.com",
+        "phone": "(886)9XXXXXXXX",
+        "email": "XXXXXXX@XXX.XXX",
         "github": "https://github.com/tobliao",
         "linkedin": "https://www.linkedin.com/in/tobliao/",
-        "address": "No. 460, Sec. 4, Xinyi Rd., Xinyi Dist., Taipei City."
+        "address": "No.122, Sec. 1, Chongqing S. Rd., Zhongzheng Dist., Taipei City, Taiwan (R.O.C.)"
     }
 
     # experience
@@ -113,4 +113,3 @@ def index():
         # education
         schools=schools,
     )
-    
